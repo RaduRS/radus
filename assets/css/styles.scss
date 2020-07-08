@@ -1,0 +1,122 @@
+body{
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+
+h1 {
+    font-family: neuzeitgro, sans-serif;
+    font-size: 84px;
+    word-spacing: 1px;
+    line-height: 90px;
+    text-transform: none;
+    letter-spacing: -3px;
+    color: #181818;
+    text-align: center;
+    margin: .8em 0 0;
+}
+
+.center{
+    float: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-10 {
+    width: 680px;
+    position: relative;
+    max-width: 100%;
+}
+
+p{
+    font-family: freightsans, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 32px;
+    color: #6b6b6b;
+}
+
+.nav-item{
+    padding: 10px;
+    margin: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+// .text-left{
+//     text-align: left;
+// }
+
+// .text-right{
+//     text-align: right;
+//     transition: all .8s ease;
+//     &:hover{
+//         text-align: center !important;
+//     }
+// }
+
+
+// li{
+//     width: 100%;
+//     transition: width .8s ease;
+// }
+
+// ul:hover > li {
+//     width: 0;
+//   }
+
+// .alpha{
+//     margin-left: 0;
+// }
+// .omega{
+//     margin-right: 0;
+// }
+
+nav li{
+    display: inline-block;
+    width: 150px;
+}
+
+nav a{
+    border-bottom: .5px solid #606768;
+    &:hover{
+        transition: all 500ms;
+        cursor: pointer;
+        border-bottom: .5px solid #16a6b6;
+        border-bottom-width: 0.3rem;
+        position: absolute;
+        width: 130px;
+    }
+}
+
+a.nav-link{
+    padding: 0 !important;
+    &:hover{
+        color: #16a6b6 !important;
+    }
+}
+
+
+@font-face {
+    font-family: freightsans;
+    src: url(/assets/fonts/freightsans-book-webfont.woff);
+}
+
+@font-face {
+    font-family: freightsansLight;
+    src: url(/assets/fonts/freightsans-light-webfont.woff);
+}
+
+@font-face {
+    font-family: neuzeitgro;
+    src: url(/assets/fonts/neuzeitgro-bol-webfont.woff);
+}
+
+@font-face {
+    font-family: standard;
+    src: url(/assets/fonts/ss-standard.woff);
+}
