@@ -1,5 +1,4 @@
 body{
-    text-align: center;
     font-size: 18px;
     word-spacing: 2px;
 }
@@ -37,6 +36,7 @@ p{
     letter-spacing: 0;
     line-height: 32px;
     color: #6b6b6b;
+    text-align: center;
 }
 
 .nav-item{
@@ -46,45 +46,48 @@ p{
     letter-spacing: 3px;
 }
 
+.col-md-3 > div{
+    transition: all .1s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
 
-// .text-left{
-//     text-align: left;
-// }
+.col-md-3{
+    filter:drop-shadow(4px 4px 6px #b8b9be) ;
+    &.A{
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+}
 
-// .text-right{
-//     text-align: right;
-//     transition: all .8s ease;
-//     &:hover{
-//         text-align: center !important;
-//     }
-// }
+img{
+    filter:drop-shadow(-2px -2px 4px #fff);
+}
 
 
-// li{
-//     width: 100%;
-//     transition: width .8s ease;
-// }
+#D1{
+    padding-right: 15px;
+}
 
-// ul:hover > li {
-//     width: 0;
-//   }
-
-// .alpha{
-//     margin-left: 0;
-// }
-// .omega{
-//     margin-right: 0;
-// }
+.row{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 nav li{
     display: inline-block;
     width: 150px;
 }
 
-nav a{
+nav .nav-link{
     border-bottom: .5px solid #606768;
     &:hover{
-        transition: all 500ms;
+        transition: all 50ms;
         cursor: pointer;
         border-bottom: .5px solid #16a6b6;
         border-bottom-width: 0.3rem;
@@ -100,6 +103,10 @@ a.nav-link{
     }
 }
 
+
+.logo{
+    width: 70px;
+}
 
 @font-face {
     font-family: freightsans;

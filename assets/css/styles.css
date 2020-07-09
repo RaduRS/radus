@@ -1,5 +1,4 @@
 body {
-  text-align: center;
   font-size: 18px;
   word-spacing: 2px;
 }
@@ -38,6 +37,7 @@ p {
   letter-spacing: 0;
   line-height: 32px;
   color: #6b6b6b;
+  text-align: center;
 }
 
 .nav-item {
@@ -47,18 +47,61 @@ p {
   letter-spacing: 3px;
 }
 
+.col-md-3 > div {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.col-md-3 > div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.col-md-3 {
+  -webkit-filter: drop-shadow(4px 4px 6px #b8b9be);
+          filter: drop-shadow(4px 4px 6px #b8b9be);
+}
+
+.col-md-3.A {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+img {
+  -webkit-filter: drop-shadow(-2px -2px 4px #fff);
+          filter: drop-shadow(-2px -2px 4px #fff);
+}
+
+#D1 {
+  padding-right: 15px;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 nav li {
   display: inline-block;
   width: 150px;
 }
 
-nav a {
+nav .nav-link {
   border-bottom: .5px solid #606768;
 }
 
-nav a:hover {
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+nav .nav-link:hover {
+  -webkit-transition: all 50ms;
+  transition: all 50ms;
   cursor: pointer;
   border-bottom: .5px solid #16a6b6;
   border-bottom-width: 0.3rem;
@@ -72,6 +115,10 @@ a.nav-link {
 
 a.nav-link:hover {
   color: #16a6b6 !important;
+}
+
+.logo {
+  width: 70px;
 }
 
 @font-face {
