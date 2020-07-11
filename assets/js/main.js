@@ -1,8 +1,8 @@
 
 var x = Math.round( Math.random() * 30) + 1;
-var y = Math.round( Math.random() * 30) + 1;
-var z = Math.round( Math.random() * 20) + 1;
-var b = Math.round( Math.random() * 20) + 1;
+var y = Math.round( Math.random() * 35) + 1;
+var z = Math.round( Math.random() * 50) + 1;
+var b = Math.round( Math.random() * 50) + 1;
 
 // var bg = "background: rgb("+x+", "+y+", "+z+");" + 
 //          "filter: invert(48%) sepia(13%) saturate(350%)  hue-rotate(350%) brightness(95%) contrast(350%);"
