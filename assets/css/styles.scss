@@ -89,7 +89,7 @@ nav .nav-link{
     &:hover{
         transition: all 50ms;
         cursor: pointer;
-        border-bottom: .5px solid #16a6b6;
+        border-bottom: .5px solid #252525;
         border-bottom-width: 0.3rem;
         position: absolute;
         width: 130px;
@@ -99,7 +99,7 @@ nav .nav-link{
 a.nav-link{
     padding: 0 !important;
     &:hover{
-        color: #16a6b6 !important;
+        color: #252525 !important;
     }
 }
 
