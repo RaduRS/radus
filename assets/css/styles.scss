@@ -100,12 +100,49 @@ a.nav-link{
     padding: 0 !important;
     &:hover{
         color: #252525 !important;
+        // font-family: neuzeitgro, sans-serif;
     }
 }
 
 
 .logo{
     width: 70px;
+}
+
+.projects-header{
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+.latest-projects{
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.card{
+    margin: 10px;
+}
+
+.card-img-top{
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.card-body{
+    padding: 0 0 0 10px;
+}
+
+.card-text{
+    text-align: left;
+}
+
+.card-text-subtext{
+    font-family: neuzeitgro, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
