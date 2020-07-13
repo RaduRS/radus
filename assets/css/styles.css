@@ -159,7 +159,7 @@ a.nav-link:hover {
 
 @font-face {
   font-family: freightsans;
-  src: url(assets/fonts/freightsans-book-webfont.woff);
+  src: url(../../assets/fonts/freightsans-book-webfont.woff);
 }
 
 @font-face {
@@ -169,7 +169,7 @@ a.nav-link:hover {
 
 @font-face {
   font-family: neuzeitgro;
-  src: url(assets/fonts/neuzeitgro-bol-webfont.woff);
+  src: url(../../assets/fonts/neuzeitgro-bol-webfont.woff);
 }
 
 @font-face {
