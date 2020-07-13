@@ -39,13 +39,6 @@ p{
     text-align: center;
 }
 
-.nav-item{
-    padding: 10px;
-    margin: 50px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
 .col-md-3 > div{
     transition: all .1s;
     &:hover {
@@ -79,6 +72,22 @@ img{
     flex-wrap: wrap;
 }
 
+.navbar-nav{
+    width: 100%;
+    padding: 0px 15%;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex wrap;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 nav li{
     display: inline-block;
     width: 150px;
@@ -86,6 +95,7 @@ nav li{
 
 nav .nav-link{
     border-bottom: .5px solid #606768;
+    position: relative;
     &:hover{
         transition: all 50ms;
         cursor: pointer;
@@ -145,14 +155,26 @@ a.nav-link{
     margin: 0;
 }
 
+.first-paragraph{
+    margin: 2rem auto;
+}
+
+.list-projects{
+    padding: 0;
+}
+
+
+.col-md-4{
+    padding: 0;
+}
 @font-face {
     font-family: freightsans;
-    src: url(/fonts/freightsans-book-webfont.woff);
+    src: url(../../fonts/freightsans-book-webfont.woff);
 }
 
 @font-face {
     font-family: freightsansLight;
-    src: url(/fonts/freightsans-light-webfont.woff);
+    src: url(../../fonts/freightsans-light-webfont.woff);
 }
 
 @font-face {
@@ -162,5 +184,5 @@ a.nav-link{
 
 @font-face {
     font-family: standard;
-    src: url(/fonts/ss-standard.woff);
+    src: url(../../fonts/ss-standard.woff);
 }
