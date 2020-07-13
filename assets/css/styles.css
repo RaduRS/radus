@@ -159,21 +159,21 @@ a.nav-link:hover {
 
 @font-face {
   font-family: freightsans;
-  src: url(../../assets/fonts/freightsans-book-webfont.woff);
+  src: url(/fonts/freightsans-book-webfont.woff);
 }
 
 @font-face {
   font-family: freightsansLight;
-  src: url(assets/fonts/freightsans-light-webfont.woff);
+  src: url(/fonts/freightsans-light-webfont.woff);
 }
 
 @font-face {
   font-family: neuzeitgro;
-  src: url(../../assets/fonts/neuzeitgro-bol-webfont.woff);
+  src: url(../../fonts/neuzeitgro-bol-webfont.woff);
 }
 
 @font-face {
   font-family: standard;
-  src: url(assets/fonts/ss-standard.woff);
+  src: url(/fonts/ss-standard.woff);
 }
 /*# sourceMappingURL=styles.css.map */
