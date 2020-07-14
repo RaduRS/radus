@@ -43,12 +43,13 @@ p{
     transition: all .1s;
     &:hover {
         transform: scale(1.2);
+        
     }
 }
 
 .col-md-3{
-    filter:drop-shadow(4px 4px 6px #b8b9be) ;
-    &.A{
+    filter:drop-shadow(4px 2px 2px #afafaf) ;
+    &.columns{
         text-align: center;
         padding: 10px;
         margin: 0;
@@ -56,7 +57,7 @@ p{
 }
 
 img{
-    filter:drop-shadow(-2px -2px 4px #fff);
+    filter:drop-shadow(-4px -3px 1px rgb(255, 255, 255));
 }
 
 
@@ -64,13 +65,13 @@ img{
     padding-right: 15px;
 }
 
-.row{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+// .row{
+//     padding: 0;
+//     margin: 0;
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+// }
 
 .navbar-nav{
     width: 100%;
@@ -97,7 +98,7 @@ nav .nav-link{
     border-bottom: .5px solid #606768;
     position: relative;
     &:hover{
-        transition: all 50ms;
+        transition: all .1s;
         cursor: pointer;
         border-bottom: .5px solid #252525;
         border-bottom-width: 0.3rem;
@@ -163,10 +164,39 @@ a.nav-link{
     padding: 0;
 }
 
+.arrow{
+    transition: all 1s;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background: url(../../assets//img/arrow.png);
+    display: block;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    opacity: 0;
+}
+
+.card:hover .moving-arrow {
+    transition: all .5s;
+    right: 25px;
+    opacity: 1;
+}
+
+.row:hover .col-md-4 {
+    transition: all .5s;
+    opacity: 0.5;
+}
 
 .col-md-4{
+    transition: all .5s;
     padding: 0;
+    &:hover{
+        opacity: 1 !important;
+    }
 }
+
 @font-face {
     font-family: freightsans;
     src: url(../../fonts/freightsans-book-webfont.woff);

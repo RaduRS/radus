@@ -1,4 +1,7 @@
 
+window.onload= function (){
+
+
 var x = Math.round( Math.random() * 30) + 1;
 var y = Math.round( Math.random() * 35) + 1;
 var z = Math.round( Math.random() * 50) + 1;
@@ -126,3 +129,5 @@ var U3 = document.getElementById("U3")
   U3.addEventListener("mouseleave", function(event) {
     event.target.style = "filter: brightness("+b+"%) saturate("+x+"%)";
   });
+
+}
