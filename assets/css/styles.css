@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 18px;
   word-spacing: 2px;
@@ -202,6 +206,11 @@ a.nav-link:hover {
   opacity: 1 !important;
 }
 
+.col-md-4 a {
+  text-decoration: none;
+  color: #212529;
+}
+
 @font-face {
   font-family: freightsans;
   src: url(../../fonts/freightsans-book-webfont.woff);
@@ -220,5 +229,46 @@ a.nav-link:hover {
 @font-face {
   font-family: standard;
   src: url(../../fonts/ss-standard.woff);
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+#circleBar {
+  margin-top: 180px;
+  text-align: center;
+}
+
+#circleBar .round {
+  min-height: 255px;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#circleBar .round strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 40px;
+  color: #212121;
+  font-weight: 100;
+}
+
+#circleBar span {
+  display: block;
+  color: #999;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+#circleBar span i {
+  color: #ff5c5c;
+  font-size: 22px;
+  margin-right: 7px;
 }
 /*# sourceMappingURL=styles.css.map */
