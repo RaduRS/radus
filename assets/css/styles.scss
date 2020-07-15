@@ -1,3 +1,7 @@
+
+$primary-color: #2385a6;
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -187,6 +191,10 @@ a.nav-link{
     opacity: 1;
 }
 
+.fade-in{
+    opacity: 0;
+}
+
 .row:hover .col-md-4 {
     transition: all .5s;
     opacity: 0.5;
@@ -204,6 +212,7 @@ a.nav-link{
     text-decoration: none;
     color: #212529;
 }
+
 
 
 @font-face {
@@ -226,29 +235,25 @@ a.nav-link{
     src: url(../../fonts/ss-standard.woff);
 }
 
-.fade-in{
-    opacity: 0;
-}
 
 #circleBar{
-    margin-top: 180px;
     text-align: center;
 }
 
-#circleBar .round{
-    min-height: 255px;
+#circleBar .round, #circleBar .round2, #circleBar .round3, #circleBar .round4{
+    min-height: 20%;
     margin-top: 30px;
     position: relative;
     margin-bottom: 20px;
 }
 
-#circleBar .round strong{
+#circleBar .round strong, #circleBar .round2 strong, #circleBar .round3 strong, #circleBar .round4 strong{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -50px;
     transform: translate(-50%);
-    font-size: 40px;
+    font-size: 2em;
     color: #212121;
     font-weight: 100;
 }
@@ -261,7 +266,16 @@ a.nav-link{
 }
 
 #circleBar span i{
-    color: #ff5c5c;
+    color: $primary-color;
     font-size: 22px;
     margin-right: 7px;
+}
+
+section button:hover{
+    background-color: $primary-color;
+}
+
+canvas{
+    width: 50% !important;
+    height: 50% !important;
 }

@@ -190,6 +190,10 @@ a.nav-link:hover {
   opacity: 1;
 }
 
+.fade-in {
+  opacity: 0;
+}
+
 .row:hover .col-md-4 {
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -231,30 +235,25 @@ a.nav-link:hover {
   src: url(../../fonts/ss-standard.woff);
 }
 
-.fade-in {
-  opacity: 0;
-}
-
 #circleBar {
-  margin-top: 180px;
   text-align: center;
 }
 
-#circleBar .round {
-  min-height: 255px;
+#circleBar .round, #circleBar .round2, #circleBar .round3, #circleBar .round4 {
+  min-height: 20%;
   margin-top: 30px;
   position: relative;
   margin-bottom: 20px;
 }
 
-#circleBar .round strong {
+#circleBar .round strong, #circleBar .round2 strong, #circleBar .round3 strong, #circleBar .round4 strong {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -50px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  font-size: 40px;
+  font-size: 2em;
   color: #212121;
   font-weight: 100;
 }
@@ -267,8 +266,17 @@ a.nav-link:hover {
 }
 
 #circleBar span i {
-  color: #ff5c5c;
+  color: #2385a6;
   font-size: 22px;
   margin-right: 7px;
+}
+
+section button:hover {
+  background-color: #2385a6;
+}
+
+canvas {
+  width: 50% !important;
+  height: 50% !important;
 }
 /*# sourceMappingURL=styles.css.map */

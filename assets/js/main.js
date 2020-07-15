@@ -129,34 +129,49 @@ var U3 = document.getElementById("U3")
   U3.addEventListener("mouseleave", function(event) {
     event.target.style = "filter: brightness("+b+"%) saturate("+x+"%)";
   });
+
+
+
 }
 
+$(document).scroll(function() {
+  console.log($(document).scrollTop());
+})
+
   $(document).ready(function() {
-      
+    
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-    
+
+
         /* Check the location of each desired element */
-        $('.fade-in').each( function(i){
-            
+        $('.fade-in').each( function(i){          
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
+             
             
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},100);
-                    
+                $(this).animate({'opacity':'1'} ,300);
             }
-
-            function Circle(el){
-              $(el).circleProgress({fill: {color: '#ff5c5c'}})
-              .on('circle-animation-progress', function(event, progress, stepValue){
-                $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2) + '%');
-              });
-            };
-          
-            Circle('.round')
-        });    
+        });  
     }); 
   });
+
+  function Circle(el){
+    $(el).circleProgress({fill: {color: '#2385a6'}})
+    .on('circle-animation-progress', function(event, progress, stepValue){
+      $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2) + '%');
+    });
+  }; 
+
+
+  if ($(document).scrollTop() > 1100){
+      Circle('.round');
+      Circle('.round2');
+      Circle('.round3');
+      Circle('.round4');
+  }
+
+
+
