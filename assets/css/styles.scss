@@ -13,14 +13,31 @@ body{
 
 h1 {
     font-family: neuzeitgro, sans-serif;
-    font-size: 84px;
+    font-size: 5em;
     word-spacing: 1px;
     line-height: 90px;
     text-transform: none;
     letter-spacing: -3px;
     color: #181818;
     text-align: center;
-    margin: .8em 0 0;
+
+}
+
+h2{
+    font-family: freightsansLight, freightsans, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: #181818;
+    text-align: center;
+    font-weight: 100;
+    word-spacing: 15px;
+    line-height: 30px;
+}
+
+hr{
+    width: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .center{
