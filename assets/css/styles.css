@@ -292,7 +292,7 @@ a.nav-link:hover {
   content: "";
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
-  width: 2.5em;
+  width: 1.5em;
   display: block;
   position: absolute;
   top: 0;
@@ -624,6 +624,36 @@ footer {
           filter: brightness(98%);
   bottom: 0;
   padding: 20px;
+}
+
+button #submit {
+  background-color: transparent !important;
+  color: #2385a6;
+  padding: 0.20em 1em;
+}
+
+button #submit:hover {
+  color: #fff;
+}
+
+.input-button {
+  padding: 0px;
+}
+
+.input-button-msg-sent {
+  padding: 0px;
+  border-color: yellowgreen;
+  background-color: yellowgreen;
+  color: #fff !important;
+}
+
+.input-button-msg-sent:hover {
+  background-color: yellowgreen;
+  color: yellowgreen !important;
+}
+
+.sumbit-sent {
+  color: #fff !important;
 }
 
 @media (max-width: 576px) {

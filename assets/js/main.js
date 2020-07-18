@@ -1,6 +1,4 @@
-
 window.onload= function (){
-
 
 var x = Math.round( Math.random() * 30) + 1;
 var y = Math.round( Math.random() * 35) + 1;
@@ -130,33 +128,8 @@ var U3 = document.getElementById("U3")
     event.target.style = "filter: brightness("+b+"%) saturate("+x+"%)";
   });
 
-
-
 }
 
-// $(document).scroll(function() {
-//   console.log($(document).scrollTop());
-// })
-
-  // $(document).ready(function() {
-    
-  //   /* Every time the window is scrolled ... */
-  //   $(window).scroll( function(){
-
-
-  //       /* Check the location of each desired element */
-  //       $('.fade-in').each( function(i){          
-  //           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-  //           var bottom_of_window = $(window).scrollTop() + $(window).height();
-             
-            
-  //           /* If the object is completely visible in the window, fade it it */
-  //           if( bottom_of_window > bottom_of_object ){
-  //               $(this).animate({'opacity':'1'} ,300);
-  //           }
-  //       });  
-  //   }); 
-  // });
 
   function Circle(el){
     $(el).circleProgress({fill: {color: '#2385a6'}})
@@ -174,6 +147,16 @@ var U3 = document.getElementById("U3")
       Circle('.round5');
       Circle('.round6');
   }
+
+  $('#SubmitForm').submit((e) => {
+    e.preventDefault();
+    $('#submit').attr('value', 'Message Sent');
+
+    if(document.getElementById("submit").value = 'Message Sent'){
+      document.getElementById("msg-button").classList.add("input-button-msg-sent");
+      document.getElementById("submit").classList.add("sumbit-sent");
+    }
+});
 
 
 

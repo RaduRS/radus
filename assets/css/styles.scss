@@ -235,7 +235,6 @@ a.nav-link{
 
 .col-md-4{
     transition: all .5s;
-
     &:hover{
         opacity: 1 !important;
     }
@@ -257,7 +256,7 @@ a.nav-link{
 }
 
 
-.button {
+.button{
   font-family: freightsans, Arial, Helvetica, sans-serif;
   padding: 0.20em 1em;
   text-align: center;
@@ -274,7 +273,7 @@ a.nav-link{
     content: "";
     background-color: rgba(255,255,255,0.5);
     height: 100%;
-    width: 2.5em;
+    width: 1.5em;
     display: block;
     position: absolute;
     top: 0;
@@ -437,15 +436,8 @@ button {
 button:hover {
 	cursor: pointer;
 }
-
-// iframe {
-// 	border: none !important;
-// }
-
-// .bg-contact2 {
-//     width: 100%;  
-//   }
   
+
   .container-contact2 {
     width: 100%;  
     min-height: 80vh;
@@ -566,14 +558,6 @@ button:hover {
     width: 100%;
   }
   
-  // .has-val.input2 + .focus-input2::after {
-  //   top: -13px;
-  // }
-  
-  // .has-val.input2 + .focus-input2::before {
-  //   width: 100%;
-  // }
-
   .container-contact2-form-btn {
     display: flex;
     flex-wrap: wrap;
@@ -596,6 +580,34 @@ button:hover {
     filter: brightness(98%);
     bottom: 0;
     padding: 20px;
+  }
+
+  button #submit{
+    background-color: transparent !important;
+    color: $primary-color;
+    padding: 0.20em 1em;
+    &:hover{
+      color: #fff;
+    }
+  }
+
+  .input-button{
+    padding: 0px;
+  }
+
+  .input-button-msg-sent{
+    padding: 0px;
+    border-color: yellowgreen;
+    background-color: yellowgreen;
+    color: #fff !important;
+    &:hover{
+      background-color: yellowgreen;
+      color: yellowgreen !important;
+    }
+  }
+
+  .sumbit-sent{
+    color: #fff !important;
   }
 
   @media (max-width: 576px) {
