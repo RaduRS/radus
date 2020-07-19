@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 window.onload= function (){
 
 var x = Math.round( Math.random() * 30) + 1;
