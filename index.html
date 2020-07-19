@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ecd700c6e4.js" crossorigin="anonymous"></script>
 
@@ -18,21 +18,21 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li class="nav-item text-left">
-              <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+            <li class="nav-item text-left" id="nav-about">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item text-left">
+            <li class="nav-item text-left" id="nav-portfolio">
               <a class="nav-link" href="#projects">Portfolio</a>
             </li>
-            <li class="nav-item" style="padding: 0px; margin: 0px; text-align: center">
+            <li class="nav-item" style="padding: 0px; margin: 0px; text-align: center" id="nav-logo">
                 <a class="" href="#">
                   <img class="logo" src="assets/img/logoB&W-grey.png" alt="" srcset="">
                 </a>
             </li>
-            <li class="nav-item text-right">
+            <li class="nav-item text-right" id="nav-skills">
                 <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item text-right">
+            <li class="nav-item text-right" id="nav-contact">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -52,7 +52,6 @@
 <div class="container radu">
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6 columns">
-
             <div>
               <a href="#">
                 <img id="R1" src="assets/img/R/1.png" alt="" srcset="">
@@ -360,7 +359,7 @@
 <div class="bg-contact2 bg-light" id="contact">
   <div class="container-contact2">
     <div class="wrap-contact2">
-      <form id="SubmitForm" class="contact2-form" id="contact-form" method="POST" action="contact-form.php">
+      <form method="post" action="contact-form.php" id="SubmitForm" class="contact2-form" id="contact-form">
         <span class="contact2-form-title">
           LET'S GET IN TOUCH
         </span>
@@ -385,9 +384,9 @@
 
         <div class="container-contact2-form-btn">
           <div class="wrap-contact2-form-btn">
-            <button class="button input-button" id="msg-button">
-              <input type="submit" id="submit" name="submit" value="Send Your Message">
-            </button>
+            <div class="button input-button" id="msg-button">
+              <input type="submit" id="submit" name="submit" value="Send Your Message" onsubmit="change()">
+            </div>
               
           </div>
         </div>
@@ -400,8 +399,24 @@
 <!-- GET IN TOUCH -->
 
 <footer class="bg-light">
-    <div class="container">
-      <p>Made by <a href="#about">RADU</a></p>
+
+    <div class="foot">
+      <div class="row">
+        <div class="col-sm-6 col-12">
+          <p>Copyright © 
+            <script>document.write(new Date().getFullYear())</script>     
+            <a href="#about">RADU</a>
+          </p>
+        </div>
+        <div class="col-sm-6 col-12">
+          <a href="https://github.com/RaduRS" target="_blank"><i class="fab fa-github"></i></a>
+
+          <a href="https://www.linkedin.com/in/radu-rusu-88449991/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    
+    
+          <a href="https://radus.co.uk/#contact"><i class="fas fa-link"></i></a>
+        </div>
+      </div>     
     </div>
 </footer>
 

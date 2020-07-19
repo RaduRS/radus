@@ -1,4 +1,7 @@
 <?php
+
+if (isset($_POST['submit'])) { 
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
@@ -8,9 +11,9 @@
 
     $email_subject = 'New Form submission';
 
-    $email_body = "User Name: $name.\n".
-                        "User Email: $email.\n".
-                            "User Message: $message.\n";
+    $email_body = "User Name: $name \n".
+                        "User Email: $email \n".
+                            "User Message: $message \n";
 
     $to = "support@radus.co.uk";
 
@@ -19,5 +22,7 @@
     $headers .= "Reply-To: $email \r\n";
     
     mail($to, $email_subject, $email_body, $headers);
-    header("Location: index.html#contact");
+    header('Location: index.html');
+    die();
+} 
 ?>

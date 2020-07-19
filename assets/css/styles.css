@@ -85,6 +85,8 @@ p {
   text-align: center;
   padding: 10px;
   margin: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 img {
@@ -143,7 +145,7 @@ a.nav-link:hover {
 }
 
 .radu {
-  padding: 3em;
+  padding: 0em;
 }
 
 .logo {
@@ -618,22 +620,15 @@ textarea.input2 + .focus-input2::after {
   margin: 0 auto;
 }
 
-footer {
-  border-top: 0.5px solid #999999;
-  -webkit-filter: brightness(98%);
-          filter: brightness(98%);
-  bottom: 0;
-  padding: 20px;
-}
-
-button #submit {
-  background-color: transparent !important;
+#submit {
+  background: transparent !important;
   color: #2385a6;
   padding: 0.20em 1em;
 }
 
-button #submit:hover {
-  color: #fff;
+#submit:hover {
+  color: #fff !important;
+  background: #2385a6;
 }
 
 .input-button {
@@ -656,9 +651,131 @@ button #submit:hover {
   color: #fff !important;
 }
 
+footer {
+  border-top: 0.5px solid #999999;
+  -webkit-filter: brightness(98%);
+          filter: brightness(98%);
+  bottom: 0;
+  padding: 20px;
+}
+
+footer .fab, footer .fas {
+  margin: 0em 0.3em;
+  padding: 0.3em 0.3em;
+  text-align: center;
+  text-decoration: none;
+  color: #2385a6;
+  border: 2px solid #2385a6;
+  font-size: 2em;
+  display: inline-block;
+  border-radius: 0.3em;
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+footer .fab:before, footer .fas:before {
+  height: 100%;
+  width: 1.5em;
+}
+
+footer .fab:hover, footer .fas:hover {
+  cursor: pointer;
+  background-color: #2385a6;
+  color: #fff;
+  text-shadow: 2px 2px 4px #0a0a0a;
+  -webkit-box-shadow: 4px 4px 2px #afafaf;
+          box-shadow: 4px 4px 2px #afafaf;
+}
+
+footer .fab:hover:before, footer .fas:hover:before {
+  -webkit-transform: skewX(-45deg) translateX(13.5em);
+          transform: skewX(-45deg) translateX(13.5em);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none !important;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+footer p a {
+  color: #2385a6;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: none;
+}
+
+.foot {
+  text-align: center;
+}
+
 @media (max-width: 576px) {
   .wrap-contact2 {
     padding: 2em 0.5em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    margin: auto !important;
+    padding: 50px;
+  }
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #nav-about {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #nav-portfolio {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #nav-logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #nav-skills {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #nav-contact {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 /*# sourceMappingURL=styles.css.map */

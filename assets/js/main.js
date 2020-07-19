@@ -148,15 +148,20 @@ var U3 = document.getElementById("U3")
       Circle('.round6');
   }
 
-  $('#SubmitForm').submit((e) => {
-    e.preventDefault();
-    $('#submit').attr('value', 'Message Sent');
+//   $('#SubmitForm').submit((e) => {
+//     e.preventDefault();
+//     $('#submit').attr('value', 'Message Sent');
 
-    if(document.getElementById("submit").value = 'Message Sent'){
-      document.getElementById("msg-button").classList.add("input-button-msg-sent");
-      document.getElementById("submit").classList.add("sumbit-sent");
-    }
-});
+// });
 
 
+function change(){
+    
+  var submit = document.getElementById("submit");
+  submit.value = "Message Sent";
+
+  document.getElementById("msg-button").classList.add("input-button-msg-sent");
+  submit.classList.add("sumbit-sent");
+
+}
 
