@@ -162,10 +162,9 @@ var U3 = document.getElementById("U3")
 function change(){
     
   var submit = document.getElementById("submit");
+  var msg =  document.getElementById("msg-button");
   submit.value = "Message Sent";
-
-  document.getElementById("msg-button").classList.add("input-button-msg-sent");
+  msg.classList.add("input-button-msg-sent");
   submit.classList.add("sumbit-sent");
-
 }
 
